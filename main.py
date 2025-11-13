@@ -1,9 +1,6 @@
 import os
 from google import genai
 from google.genai import types
-import requests
-
-GEMINI_API_KEY="AIzaSyBsqItdLobUoqGbydFb0IQTyTZvni4vgqY"
 
 
 statement = "Please analyze wether the following statement is true or false. Think wisely and deeply. Your response should ONLY be a 'T' or an 'F'. "
@@ -14,7 +11,7 @@ config = types.GenerateContentConfig()
 
 response = client.models.generate_content(
     model="gemini-2.5-flash",
-    contents="statement",
+    contents=statement,
     config=config,
 )
 
