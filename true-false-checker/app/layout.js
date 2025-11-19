@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'True or False Checker',
-  description: 'Check if statements are true or false',
+  title: "True or False Checker",
+  description: "Check if statements are true or false",
 };
 
 export default function RootLayout({ children }) {
